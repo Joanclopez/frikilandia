@@ -162,7 +162,7 @@ a:hover .header-profile-image {
   width: 200px;
 }
 .modal-content{
-  background: url(/modules/core/client/img/modal-bases.png) no-repeat center center fixed!important;
+  background: url(/modules/core/client/img/modal-bases.png) repeat center center fixed!important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -208,6 +208,15 @@ a:hover .header-profile-image {
     height: 400px;
   }
 }
+/*@media (min-height:768px){
+  #mapa{
+    width: 500px;
+    height: 400px;
+  }
+  .modal-content{
+    background: url(/modules/core/client/img/modal-bases.png) repeat center!important;
+  }
+}*/
 .inscripcion-p{
   opacity: 0.8;
   height: 10px;
