@@ -148,7 +148,7 @@ a:hover .header-profile-image {
 
 }
 .callout{
-  background: url(/modules/core/client/img/smash-banner.png) no-repeat center center fixed!important;
+  background: url(/modules/core/client/img/smash-banner.png) repeat center center fixed!important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
