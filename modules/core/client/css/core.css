@@ -198,6 +198,9 @@ a:hover .header-profile-image {
   .callout{
         background: url(/modules/core/client/img/smash-banner.png) no-repeat scroll!important;
   }
+  .modal-content{
+    background: url(/modules/core/client/img/modal-bases.png) repeat center!important;
+  }
 }
 @media (min-width:768px){
   #mapa{
@@ -229,3 +232,7 @@ a:hover .header-profile-image {
 .popover-content{
   color: black!important;
 }
+
+/*.organice{
+  width: 300px;
+}*/
