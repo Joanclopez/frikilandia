@@ -223,3 +223,9 @@ a:hover .header-profile-image {
   border:solid 3px red;
   margin-right: 5px;
 }
+.paid-inscription{
+  border-color: green!important;
+}
+.popover-content{
+  color: black!important;
+}

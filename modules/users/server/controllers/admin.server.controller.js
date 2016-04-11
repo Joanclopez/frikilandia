@@ -24,7 +24,8 @@ exports.update = function (req, res) {
   //For security purposes only merge these parameters
   user.firstName = req.body.firstName;
   user.lastName = req.body.lastName;
-  user.inscription = req.body.inscription;
+  user.smash4=req.body.smash4;
+  user.smashMelee=req.body.smashMelee;
   user.displayName = user.firstName + ' ' + user.lastName;
   user.roles = req.body.roles;
 

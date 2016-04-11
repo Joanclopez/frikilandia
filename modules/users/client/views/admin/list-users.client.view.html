@@ -2,7 +2,7 @@
 <section>
   <div class="page-header">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-md-offset-1">
         <h1>Users</h1>
       </div>
       <div class="col-md-4" style="margin-top: 2em">
@@ -16,8 +16,21 @@
       <h4 class="list-group-item-heading" ng-bind="user.username"></h4>
       <p class="list-group-item-text pull-right small" ng-bind="user.roles"></p>
       <p class="list-group-item-text" ng-bind="user.email"></p>
-      <span ng-show="user.inscription"class="label label-info">Pagado</span>
-      <span ng-show="!user.inscription"class="label label-warning">No Pagado</span>
+      <p>
+        Smash 4
+        <span ng-show="user.smash4.register"class="label label-info">Registrado</span>
+        <span ng-show="!user.smash4.register"class="label label-info">NO Registrado</span>
+        <span ng-show="user.smash4.inscription"class="label label-warning">Pagado</span>
+        <span ng-show="!user.smash4.inscription"class="label label-warning">No Pagado</span>
+      </p>
+      <p>
+        Smash Melee
+        <span ng-show="user.smashMelee.register"class="label label-info">Registrado</span>
+        <span ng-show="!user.smashMelee.register"class="label label-info">NO Registrado</span>
+        <span ng-show="user.smashMelee.inscription"class="label label-warning">Pagado</span>
+        <span ng-show="!user.smashMelee.inscription"class="label label-warning">No Pagado</span>
+
+      </p>
     </a>
   </div>
 

@@ -3,6 +3,7 @@
   <div class="page-header">
     <div class="row">
       <div class="col-md-6">
+        <img ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image">
         <h1 ng-bind="user.username"></h1>
       </div>
       <div class="col-md-4">
@@ -17,7 +18,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 col-md-offset-1">
       <div class="row">
         <div class="col-md-3"><strong>First Name</strong></div>
         <div class="col-md-6" ng-bind="user.firstName"></div>
@@ -47,10 +48,25 @@
         <div class="col-md-3"><strong>Roles</strong></div>
         <div class="col-md-6" ng-bind="user.roles"></div>
       </div>
+      <hr/>
       <div class="row">
-        <div class="col-md-3"><strong>Inscripcion</strong></div>
-        <span ng-show="user.inscription"class="label label-info">Pagado</span>
-        <span ng-show="!user.inscription"class="label label-warning">No Pagado</span>
+        <div class="col-md-12">
+          <p>
+            Smash 4:
+            <span ng-show="user.smash4.register"class="label label-info">Registrado</span>
+            <span ng-show="!user.smash4.register"class="label label-info">NO Registrado</span>
+            <span ng-show="user.smash4.inscription"class="label label-warning">Pagado</span>
+            <span ng-show="!user.smash4.inscription"class="label label-warning">No Pagado</span>
+          </p>
+        <hr/>
+          <p>
+            Smash Melee:
+            <span ng-show="user.smashMelee.register"class="label label-info">Registrado</span>
+            <span ng-show="!user.smashMelee.register"class="label label-info">NO Registrado</span>
+            <span ng-show="user.smashMelee.inscription"class="label label-warning">Pagado</span>
+            <span ng-show="!user.smashMelee.inscription"class="label label-warning">No Pagado</span>
+          </p>
+        </div>
       </div>
 
     </div>

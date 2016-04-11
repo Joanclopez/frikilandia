@@ -88,11 +88,11 @@
                   </div>
                   <div class="col-md-6 text-center">
                     <h4>Smash 4</h4>
-                    <img ng-show="user.smash4.register" ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image">
+                    <img  ng-show="user.smash4.register" ng-class="{'paid-inscription':user.smash4.inscription}" ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image" popover="{{user.displayName}}." popover-trigger="mouseenter">
                   </div>
                   <div class="col-md-6 text-center">
                     <h4>Smash Melee</h4>
-                    <img ng-show="user.smashMelee.register"ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image">
+                    <img ng-show="user.smashMelee.register" ng-class="{'paid-inscription':user.smashMelee.inscription}" ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image" popover="{{user.displayName}}." popover-trigger="mouseenter">
                   </div>
               </div>
           </div>
