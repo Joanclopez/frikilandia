@@ -34,3 +34,28 @@
   min-height: 150px;
   max-height: 150px;
 }
+.samus-background{
+  /*background: url() no-repeat right center scroll!important;*/
+  position: fixed;
+  bottom:2px;
+  right: 3px;
+  width: 50%;
+  z-index: -1;
+}
+
+.kirby-background{
+  /*background: url() no-repeat right center scroll!important;*/
+  position: fixed;
+  bottom:2px;
+  right: 3px;
+  width: 50%;
+  z-index: -1;
+}
+.bowser-background{
+  /*background: url() no-repeat right center scroll!important;*/
+  position: fixed;
+  bottom:2px;
+  right: 3px;
+  width: 30%;
+  z-index: -1;
+}

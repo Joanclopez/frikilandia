@@ -45,6 +45,20 @@ var UserSchema = new Schema({
     default: '',
     validate: [validateLocalStrategyProperty, 'Ingresa tu apellido']
   },
+  smash4:{
+    type:Object,
+    default:{
+      register:false,
+      inscription:false
+    }
+  },
+  smashMelee:{
+    type:Object,
+    default:{
+      register:false,
+      inscription:false
+    }
+  },
   displayName: {
     type: String,
     trim: true

@@ -1,3 +1,4 @@
+<br><br>
 <section ng-controller="SettingsController">
   <div class="page-header">
     <h1>Configuraciones</h1>
@@ -6,13 +7,13 @@
     <nav class="col-sm-3 col-md-3">
       <ul class="nav nav-pills nav-stacked">
         <li ui-sref-active="active">
-          <a ui-sref="settings.profile">Editar Perfil</a>
+          <a ui-sref="settings.profile">Edita tu perfil</a>
         </li>
         <li ui-sref-active="active">
-          <a ui-sref="settings.picture">Cambiar foto de perfil</a>
+          <a ui-sref="settings.picture">Cambia tu foto de perfil</a>
         </li>
         <li ui-sref-active="active" ng-show="user.provider === 'local'">
-          <a ui-sref="settings.password">Cambiar Contraseña</a>
+          <a ui-sref="settings.password">Cambiar tu contraseña</a>
         </li>
         <li ui-sref-active="active">
           <a ui-sref="settings.accounts">Redes sociales</a>
@@ -23,4 +24,5 @@
       <div ui-view></div>
     </div>
   </div>
+  <img class="bowser-background" ng-src="/modules/core/client/img/bowser.png" alt="">
 </section>
