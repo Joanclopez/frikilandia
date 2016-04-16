@@ -245,3 +245,17 @@ a:hover .header-profile-image {
 /*.organice{
   width: 300px;
 }*/
+.semaforoBackground{
+  position: absolute;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+}
+.yellow{
+  background-color: yellow!important;
+
+}
+.red{
+  background-color: red!important;
+
+}

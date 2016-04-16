@@ -1,0 +1,27 @@
+<section ng-controller="ChronometroController">
+  <div class="semaforoBackground" ng-class="{'yellow': displayYellow,'red': displayRed }">
+    chronometro
+    <br>
+    <br><br><br>
+    <br>
+    <!-- <input ng-model="initChronometerInput" type="number">
+    <button ng-click="addTime()">Agregar</button><br>
+    <hr>
+    <hr>
+    <input ng-model="changeYellow" type="number">
+    <button ng-click="addYellow()">Agregar</button> <span ng-show="(yellow/60)>=1">{{yellow/60}}</span> <br>
+    <hr>
+    <input ng-model="changeRed" type="number">
+    <button ng-click="addRed()">Agregar</button><span ng-show="(red/60)>=1">{{red/60}}</span><br>
+    <hr>
+    <timer  interval="1000" autostart="false" countdown="initChronometer">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>
+    <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button>
+    <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button> -->
+
+
+
+    <button ng-click="displayGreenFunction()" class="btn-primary btn-lg">Verde</button>
+    <button ng-click="displayYellowFunction()" class="btn-primary btn-lg">Amarillo</button>
+    <button ng-click="displayRedFunction()" class="btn-primary btn-lg">Rojo</button>
+  </div>
+</secton>

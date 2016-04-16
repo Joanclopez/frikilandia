@@ -17,6 +17,10 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       url: '/',
       templateUrl: 'modules/core/client/views/home.client.view.html'
     })
+    .state('chronometro', {
+      url: '/cronometro',
+      templateUrl: 'modules/core/client/views/chronometro.client.view.html',
+    })
     .state('not-found', {
       url: '/not-found',
       templateUrl: 'modules/core/client/views/404.client.view.html',
