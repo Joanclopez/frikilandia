@@ -247,7 +247,7 @@ a:hover .header-profile-image {
 }*/
 .semaforoBackground{
   position: absolute;
-  background-color: green;
+  background-color: #00ff04;
   width: 100%;
   height: 100%;
 }
