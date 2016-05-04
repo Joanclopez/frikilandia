@@ -83,14 +83,11 @@
                       <img class="inscripcion-p"ng-src="modules/users/client/img/profile/default.png" alt="">Inscripcion pagada
                       <!-- <img class="inscripcion-n"ng-src="modules/users/client/img/profile/default.png" alt=""> -->
                   </div>
-                  <div class="col-md-6 text-center">
+                  <div class="col-md-12 text-center">
                     <h4>Smash 4</h4>
                     <img  ng-show="user.smash4.register" ng-class="{'paid-inscription':user.smash4.inscription}" ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image" popover="{{user.displayName}}." popover-trigger="mouseenter">
                   </div>
-                  <div class="col-md-6 text-center">
-                    <h4>Smash Melee</h4>
-                    <img ng-show="user.smashMelee.register" ng-class="{'paid-inscription':user.smashMelee.inscription}" ng-repeat="user in users" ng-src="{{user.profileImageURL}}" alt="{{user.displayName}}" class="list-profile-image" popover="{{user.displayName}}." popover-trigger="mouseenter">
-                  </div>
+
               </div>
           </div>
       </aside>
@@ -177,7 +174,7 @@
         Fecha: 7 / Mayo / 2016 <br>
         Lugar: Palabra Viva Cosmos ubicado en calle Pino 2700 (esquina con calle cosmos) Col. Satélite <br>
         Edades: Menores de 24 años. <br>
-        Inscripción <span class="label label-info">$30 pesos x 1 torneo, o $50 pesos x 2</span>(La cual debera ser pagada hasta 1 hora antes del evento en las instalaciones de ARPA en Palabra Viva Cosmos). <br>
+        Inscripción <span class="label label-info">$30 pesos</span>(La cual debera ser pagada entre 11:00am y 12:00pm el dia del evento en las instalaciones de ARPA en Palabra Viva Cosmos). <br>
         Reglas: <br>
         <ul class="_5a_q _5yj1" dir="ltr">
           <li class="_2cuy _509q _2vxa">
@@ -214,9 +211,6 @@
           <tab heading="Smash Bros 4">
             <div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">2 Stocks, 6 Mins.</li><li class="_2cuy _509q _2vxa">Miis son siempre válidos, usando un Mii      Invitado con moveset 1111.</li><li class="_2cuy _509q _2vxa">En caso de estar disponibles, custom moves      podrán ser utilizados si ambos jugadores están de acuerdo con ello.</li></ul><div class="_2cuy _3dgx _2vxa"><span class="_5yi-">ESCENARIOS INICIALES</span></div><div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">Battlefield</li><li class="_2cuy _509q _2vxa">Final Destination</li><li class="_2cuy _509q _2vxa">Smashville</li><li class="_2cuy _509q _2vxa">Dreamland</li><li class="_2cuy _509q _2vxa">Town &amp; City</li></ul><div class="_2cuy _3dgx _2vxa"><span class="_5yi-">COUNTERPICKS</span></div><div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">Lylat Cruise</li><li class="_2cuy _509q _2vxa">Duck Hunt</li></ul>
           </tab>
-          <tab heading="Smash Bros Melee">
-            <div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">4 Stocks, 8 Mins.</li></ul><div class="_2cuy _3dgx _2vxa"><span class="_5yi-">ESCENARIOS INICIALES</span></div><div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">Final Destination</li><li class="_2cuy _509q _2vxa">Battlefield</li><li class="_2cuy _509q _2vxa">Yoshi&#039;s Story</li><li class="_2cuy _509q _2vxa">Dreamland</li><li class="_2cuy _509q _2vxa">Fountain of Dreams</li></ul><div class="_2cuy _3dgx _2vxa"><span class="_5yi-">COUNTERPICKS</span></div><div class="_2cuy _3dgx _2vxa"><br /></div><ul class="_5a_q _5yj1" dir="ltr"><li class="_2cuy _509q _2vxa">Pokemon Stadium</li></ul></div></div>
-          </tab>
         </tabset>
     </div>
     <div class="modal-footer">
@@ -227,22 +221,16 @@
 
 <script type="text/ng-template" id="modalSelectTournament.html">
 <div class="modal-header">
-    <h3 class="modal-title">Selecciona la Paltaforma</h3>
+    <h3 class="modal-title">Confirma tu registro</h3>
 </div>
 <div class="modal-body">
 <div class="alert alert-info">
-  <strong> Nota: </strong> Se pueden seleccionar ambas plataformas (podras participar en los dos torneos).<br>
-    1 x $30 o las 2 x $50 costo que debera ser cubierto antes del evento en las instalaciones de ARPA en Palabra Viva Cosmos.
+  <strong> </strong>Para confirmar el registro da click en el siguiente boton y has click en aceptar!!
 </div>
 <div class="row">
   <div class="col-md-6 text-center">
     <button type="button" class="btn btn-primary" ng-model="smash4Register" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
       <img class="img-responsive"src="/modules/core/client/img/smashforwii.png" alt="">
-    </button>
-  </div>
-  <div class="col-md-6 text-center">
-    <button type="button" class="btn btn-primary" ng-model="smashMeleeRegister" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">
-      <img class="img-responsive"src="/modules/core/client/img/smashmelee.png" alt="">
     </button>
   </div>
 </div>
